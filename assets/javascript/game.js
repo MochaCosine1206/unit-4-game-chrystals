@@ -7,69 +7,61 @@ var playerScore = 0;
 var wins = 0;
 var losses = 0;
 
-window.onload = function () {
-    var compPrint = document.getElementById("compScore").innerHTML = computerScore;
-    var win = document.getElementById("wins").innerHTML = ("Wins: " + wins);
-    var loss = document.getElementById("losses").innerHTML = ("Losses: " + losses);
-}
 
 
 
-function changeBlue() {
-    if (document.getElementById("blue")) {
+$(document).ready(function () {
+    $("#compScore").html(computerScore);
+    $("#wins").html("Wins: " + wins);
+    $("#losses").html("Losses: " + losses);
+    $("#blue").click(function () {
         playerScore += blueGem;
-        document.getElementById("playerSC").innerHTML = playerScore;
-    };
-    winLoss()
-}
-
-function changePurple() {
-    if (document.getElementById("purple")) {
+        $("#playerSC").html(playerScore);
+        winLoss()
+    });
+    $("#purple").click(function () {
         playerScore += purpleGem;
-        document.getElementById("playerSC").innerHTML = playerScore;
-    };
-    winLoss()
-}
-
-function changeGreen() {
-    if (document.getElementById("green")) {
+        $("#playerSC").html(playerScore);
+        winLoss()
+    });
+    $("#green").click(function () {
         playerScore += greenGem;
-        document.getElementById("playerSC").innerHTML = playerScore;
-    };
-    winLoss()
-}
-
-function changeIce() {
-    if (document.getElementById("ice")) {
+        $("#playerSC").html(playerScore);
+        winLoss()
+    });
+    $("#ice").click(function () {
         playerScore += iceGem;
-        document.getElementById("playerSC").innerHTML = playerScore;
-    };
-    winLoss()
-}
-
-function winLoss() {
-    if (playerScore === computerScore) {
-        wins++;
-        document.getElementById("wins").innerHTML = ("Wins: " + wins);
-        startOver();
-    } else if (playerScore > computerScore) {
-        losses++;
-        document.getElementById("losses").innerHTML = ("Losses: " + wins);
-        startOver();
+        $("#playerSC").html(playerScore);
+        winLoss()
+    });
+    function winLoss() {
+        if (playerScore === computerScore) {
+            wins++;
+            $("#wins").html("Wins: " + wins);
+            $("#message").show("You Win!")
+            startOver();
+        } else if (playerScore > computerScore) {
+            losses++;
+            $("#losses").html("Losses: " + losses);
+            $("#message").show("You Lose!")
+            startOver();
+        }
     }
-}
+    function startOver() {
+        computerScore = Math.floor(Math.random() * (120 - 19)) + 19;
+        $("#compScore").html(computerScore);
+        blueGem = Math.floor(Math.random() * 12) + 1;
+        purpleGem = Math.floor(Math.random() * 12) + 1;
+        greenGem = Math.floor(Math.random() * 12) + 1;
+        iceGem = Math.floor(Math.random() * 12) + 1;
+        playerScore = 0;
+        $("#playerSC").html(playerScore);
+        winLoss()
+    }
+});
 
-function startOver() {
-    computerScore = Math.floor(Math.random() * (120 - 19)) + 19;
-    document.getElementById("compScore").innerHTML = computerScore;
-    blueGem = Math.floor(Math.random() * 12) + 1;
-    purpleGem = Math.floor(Math.random() * 12) + 1;
-    greenGem = Math.floor(Math.random() * 12) + 1;
-    iceGem = Math.floor(Math.random() * 12) + 1;
-    playerScore = 0;
-    document.getElementById("playerSC").innerHTML = playerScore;
-    winLoss()
-}
+
+
 
 
 console.log(computerScore);

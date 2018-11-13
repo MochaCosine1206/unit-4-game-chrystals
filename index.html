@@ -10,6 +10,7 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous"> -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
 </head>
 
@@ -38,27 +39,28 @@
     <div class="row">
         <div class="col">
             <div class="randNum">
-                <h1 id="compScore">40</h1>
+                <h1 id="compScore"></h1>
             </div>
         </div>
         <div class="col">
             <div class="score">
+                <p id="message"></p><br>
                 <p id="wins">Wins: </p><br>
                 <p id="losses">Losses: </p>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-1" id="blue" onclick="changeBlue()">
+        <div class="col" id="blue">
             <img src="assets/images/blue.png" alt="blue">
         </div>
-        <div class="col-1" id="purple" onclick="changePurple()">
+        <div class="col" id="purple">
             <img src="assets/images/purple.png" alt="purple">
         </div>
-        <div class="col-1" id="green" onclick="changeGreen()">
+        <div class="col" id="green">
             <img src="assets/images/green.png" alt="green">
         </div>
-        <div class="col-1" id="ice" onclick="changeIce()">
+        <div class="col" id="ice">
             <img src="assets/images/ice.png" alt="ice">
         </div>
     </div>
