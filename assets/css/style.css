@@ -1,0 +1,82 @@
+body {
+    background-color: lightskyblue;
+}
+
+.row {
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+
+
+.header {
+    background-color: orange;
+    display: block;
+    float: left;
+    width: 25%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 5px;
+}
+
+
+.description {
+    background-color: beige;
+    display: block;
+    float: left;
+    color: green;
+    max-width: 40%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 5px;
+    
+}
+
+.randNum {
+    background-color: green;
+    display: block;
+    float: left;
+    width: 22%;
+    height: 100px;
+    margin: 5px;
+    font-size: 30px;
+    
+}
+
+.score {
+    background-color: aqua;
+    display: block;
+    float: left;
+    width: 8%;
+    height: 100px;
+    margin: 5px;
+    
+}
+
+
+img {
+    background-color: white;
+    display: block;
+    float: left;
+    width: 10%;   
+    padding-right: 2px;
+    padding-left: 2px; 
+    margin: 2px;
+}
+
+.scoreMessage, .ttlScore {
+    background-color: teal;
+    display: block;
+    float: left;
+    width: 20%;
+    margin: 5px;
+    
+}
+.ttlScore {
+    font-size: 30px;
+    height: 100px;
+
+}

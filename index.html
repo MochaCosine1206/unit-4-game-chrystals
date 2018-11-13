@@ -1,0 +1,78 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CrystalsCollector!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <div class="header">
+                <h1><strong>CrystalsCollector!</strong></h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="description">
+                <p>You will be given a random number at the start of the game.<br><br>There are four crystals below. By
+                    clicking on a crystal you will add a specific amount of points to your total score.<br><br>You win
+                    the game
+                    by matching your total score to a random number, you lose the game if your total score goes above
+                    the
+                    random number.<br><br>The value of each crystal is hidden from you until you click on it.<br><br>Each
+                    time
+                    when the game starts, the game will change the values of each crystal.<br><br></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="randNum">
+                <h1 id="compScore">40</h1>
+            </div>
+        </div>
+        <div class="col">
+            <div class="score">
+                <p id="wins">Wins: </p><br>
+                <p id="losses">Losses: </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1" id="blue" onclick="changeBlue()">
+            <img src="assets/images/blue.png" alt="blue">
+        </div>
+        <div class="col-1" id="purple" onclick="changePurple()">
+            <img src="assets/images/purple.png" alt="purple">
+        </div>
+        <div class="col-1" id="green" onclick="changeGreen()">
+            <img src="assets/images/green.png" alt="green">
+        </div>
+        <div class="col-1" id="ice" onclick="changeIce()">
+            <img src="assets/images/ice.png" alt="ice">
+        </div>
+    </div>
+    <div class="row">
+            <div class="col">
+    <div class="scoreMessage">Your total score is:  </div>
+            </div>
+</div>  
+<div class="row">
+        <div class="col">
+    <div class="ttlScore"><p id="playerSC">0</p></div>
+</div>
+</div>
+
+</body>
+
+</html>
