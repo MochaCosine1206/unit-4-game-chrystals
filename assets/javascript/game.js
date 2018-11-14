@@ -38,12 +38,12 @@ $(document).ready(function () {
         if (playerScore === computerScore) {
             wins++;
             $("#wins").html("Wins: " + wins);
-            $("#message").show("You Win!");
+            $("#message").html("You Win!");
             startOver();
         } else if (playerScore > computerScore) {
             losses++;
             $("#losses").html("Losses: " + losses);
-            $("#message").show("You Lose!");
+            $("#message").html("You Lose!");
             startOver();
         }
     }
