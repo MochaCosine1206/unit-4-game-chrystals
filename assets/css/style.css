@@ -16,10 +16,11 @@ h1 {
     background-color: orange;
     display: block;
     float: left;
-    width: 25%;
+    width: 205px;
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 5px;
+    box-sizing: content-box;
 }
 
 
@@ -28,10 +29,11 @@ h1 {
     display: block;
     float: left;
     color: green;
-    max-width: 40%;
+    width: 400px;
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 5px;
+    box-sizing: content-box;
     
 }
 
